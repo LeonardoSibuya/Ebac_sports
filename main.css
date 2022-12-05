@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #72f079;
+    margin-bottom: 40px;
+    padding: 16px;
+    display: flex;
+}
+
+header h1, header nav {
+    margin: 0 auto;
+}
+
+header h1 {
+    color: #504848;
+    font-style: italic;
+    font-size: 2.5em;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #504848;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+header li {
+    list-style: none;
+    float: left;
+    padding-right: 26px;
+}
+
+header li:hover {
+    text-decoration: underline;
+}
+
+.clear {
+    clear: both;
+}
+
+.loja {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.loja-img {
+    background-image: url(images/loja-futebol.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 30px;
+    width: 300%;
+    height: 360px;
+}
+
+.sobre h3,
+.conteudo > h3{
+    margin-bottom: 16px;
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #0fc218;
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: #0fc218;
+    margin-bottom: 16px;
+}
+
+.sobre p {
+    text-align: justify;
+}
+
+.conteudo {
+    margin-bottom: 20px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.7%);
+    column-gap: 2%;
+    row-gap: 5%;
+}
+
+.produtos img {
+    margin-bottom: 16px;
+    width: 200px;
+    height: 200px;
+}
+
+.product > h3,
+.product > img,
+.product > p,
+.product > button {
+    margin-bottom: 13px;
+}
+
+.product > p {
+    width: 80%;
+}
+
+.product > button {
+    width: 85%;
+    padding: 8px;
+    font-weight: bold;
+    background-color: #0fc218;
+    border: none;
+    cursor: pointer;
+}
+
+.product > button:hover {
+    background-color: #06680b;
+}
+
+footer {
+    background-color: #72f079;
+    padding: 8px;
+    text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+    }
+
+    header .container {
+        display: block;
+        text-align: center;
+    }
+    
+    header {
+        background-color: #72f079;
+        margin-bottom: 40px;
+        padding: 16px;
+        display: block;
+    }
+
+    header li {
+        list-style: none;
+        float: right;
+        padding-right: 26px;
+        margin-top: 10px;
+    }
+
+    header li a {
+        text-decoration: underline;
+        font-size: 1em;
+    }
+    
+    .clear {
+        clear: both;
+    }
+
+    .produtos {
+        display: block;
+        text-align: center;
+    }
+
+    .loja {
+        display: block;
+    }
+
+    .loja-img {
+        background-image: url(images/loja-futebol.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 360px;
+    }
+
+    .product {
+        margin-bottom: 16px;
+    }
+
+    .product > p {
+        margin: 8px auto;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .loja {
+        display: block;
+    }
+
+    .loja-img {
+        background-image: url(images/loja-futebol.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 360px;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49.7%);
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+
+    .produtos {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .product {
+        margin-bottom: 16px;
+    }
+
+    header li a {
+        text-decoration: underline;
+    }
+
+    .product > p {
+        margin: 8px auto;
+    }
+}
